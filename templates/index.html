@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>AI Career Advisor</h2>
+
+        <form method="post">
+            <label>Your Interests:</label><br>
+            <input type="text" name="interests" placeholder="e.g., AI, web development, cybersecurity" required><br><br>
+
+            <label>Your Skills:</label><br>
+            <input type="text" name="skills" placeholder="e.g., Python, HTML, writing" required><br><br>
+
+            <button type="submit">Get Career Advice</button>
+        </form>
+
+        {% if advice %}
+            <h3>Career Advice:</h3>
+            <p class="{{ 'warning' if 'Sorry' in advice else '' }}">{{ advice }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
