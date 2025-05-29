@@ -17,7 +17,7 @@ AI Career Advisor is a web application that helps users find suitable career pat
 1. Clone this repository:
 
 ```bash
-git clone https://https://github.com/Kalthuma007/Ai-career-advisor
+git clone https://github.com/Kalthuma007/Ai-career-advisor
 cd ai-career-advisor
 ```
 
